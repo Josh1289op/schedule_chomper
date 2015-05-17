@@ -1,0 +1,33 @@
+<section data-ng-controller="CoursesController" data-ng-init="sortByCode('A')">
+    <div class="page-header">
+        <h1>Courses by Course Code</h1>
+		<h4>(e.g.: COP3502)</h4>
+		<div>
+			<center>
+				<a data-ng-click="sortByCode('A')">A</a> | <a data-ng-click="sortByCode('B')">B</a> | <a data-ng-click="sortByCode('C')">C</a> | <a data-ng-click="sortByCode('D')">D</a> |
+				<a data-ng-click="sortByCode('E')">E</a> | <a data-ng-click="sortByCode('F')">F</a> | <a data-ng-click="sortByCode('G')">G</a> | <a data-ng-click="sortByCode('H')">H</a> |
+				<a data-ng-click="sortByCode('I')">I</a> | <a data-ng-click="sortByCode('J')">J</a> | <a data-ng-click="sortByCode('K')">K</a> | <a data-ng-click="sortByCode('L')">L</a> |
+				<a data-ng-click="sortByCode('M')">M</a> | <a data-ng-click="sortByCode('N')">N</a> | <a data-ng-click="sortByCode('O')">O</a> | <a data-ng-click="sortByCode('P')">P</a> |
+				<a data-ng-click="sortByCode('Q')">Q</a> | <a data-ng-click="sortByCode('R')">R</a> | <a data-ng-click="sortByCode('S')">S</a> | <a data-ng-click="sortByCode('T')">T</a> |
+				<a data-ng-click="sortByCode('U')">U</a> | <a data-ng-click="sortByCode('V')">V</a> | <a data-ng-click="sortByCode('W')">W</a> | <a data-ng-click="sortByCode('X')">X</a> |
+				<a data-ng-click="sortByCode('Y')">Y</a> | <a data-ng-click="sortByCode('Z')">Z</a>
+			</center>
+		</div>
+	</div>
+
+    <div class="list-group">
+		<small>*May take up to 3 seconds to load</small>
+        <a data-ng-repeat="course in courses | orderBy: 'section'" data-ng-href="#!/courses/{{course._id}}" class="list-group-item" ng-class="{ 'list-group-item-info': course.web }">
+			<h4 data-ng-bind="course.code"></h4>
+			<h4 class="list-group-item-heading" data-ng-bind="course.name"></h4>
+			<br />
+			Credits: {{course.credits}}, Instructor: {{course.instructor}}, Web: {{course.web}}
+			<h5 data-ng-repeat="time in course.time | orderBy: 'day'">
+				{{time}}
+			</h5>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!courses.$resolved || courses.length">
+    	No Courses yet, why don't you <a href="/#!/courses/create">create one</a>?
+    </div>
+</section>

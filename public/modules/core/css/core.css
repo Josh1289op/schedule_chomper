@@ -1,0 +1,266 @@
+@font-face {
+	font-family: Quicksand;
+	src: url(Quicksand-Bold.otf);
+}
+
+@media (max-width: 768px) {
+
+	[class*="col-"]{
+		margin-bottom: 15px;
+	}
+	.step-text {
+		font-size: 18px !important;
+	}
+	.steps {
+		font-size: 9px !important;
+	}
+
+}
+
+.content {
+	margin-top: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+.browsehappy.jumbotron.hide,
+body.ng-cloak
+{
+	display: block;
+	width: 100vw;
+	height: 100vh;
+}
+body, input, textarea {
+	font-family: Quicksand;
+}
+
+html, body {
+	max-width: 100%;
+	font-family: Quicksand !important;
+	background: #455A64;
+
+}
+section.container {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+div.welcome {
+	position: relative;
+	width: 100%;
+	background: white;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+	z-index: 928393823;
+}
+
+.logo-img {
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.projects {
+	padding-top: 2%;
+	background: #455A64;
+	z-index: 454;
+}
+
+
+div.steps {
+	display: block;
+	max-width:85%;
+	background-color: #4CAF52;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+div.row {
+	width: 100%
+}
+
+
+
+.step-img {
+	display: block;
+	width:85%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.steps {
+	text-align: center;
+	font-size: 16px;
+}
+.step-text {
+	font-size: 2em;
+	color: #FFFFFF;
+}
+
+.debug {
+	border: 0px solid red;
+}
+
+
+
+/*BUTTON INFORMATION */
+
+button {
+	width: 85%;
+	height: 75px;
+	margin: 20px 20px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	-webkit-transition: all 0.3s;
+	cursor: pointer;
+	position: relative;
+	background: transparent;
+	z-index: 1;
+}
+button:after, button:before {
+	content: "";
+	-webkit-transition: all 0.3s;
+	position: absolute;
+	z-index: -1;
+}
+.button-holder {
+	height: 50px;
+}
+
+.big-button-chomper {
+	text-align: center;
+}
+.big-button-chomper button {
+	border: 0;
+}
+.big-button-chomper .btn-success {
+	border-radius: 5px;
+	background: #4CAF52;
+	box-shadow: 0 5px #49AE4C;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+}
+.big-button-chomper .btn-success:before {
+	content: ""
+}
+.big-button-chomper .btn-success:hover {
+	-webkit-transform: translateY(2px);
+	box-shadow: 0 3px #49AE4C;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+}
+.big-button-chomper .btn-success:active {
+	-webkit-transform: translateY(5px);
+	box-shadow: 0 0 #49AE4C;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/* Colors */
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: inline-block;
+	margin: 0;
+	height: 70px;
+	background-color: #999;
+	z-index: 9999999999;
+}
+footer .copyright {
+	width: 50%;
+	float: left;
+}
+@media (max-width: 600px) {
+	footer .copyright {
+		width: 100%;
+	}
+}
+footer .copyright p {
+	padding-left: 10%;
+	color: white;
+	font-size: 0.8em;;
+	line-height: 70px;
+	letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+	footer .copyright p {
+		text-align: center;
+		padding: 0;
+	}
+}
+footer .social {
+	width: 50%;
+	float: right;
+}
+@media (max-width: 600px) {
+	footer .aboutus {
+		width: 100%;
+	}
+}
+footer .social a {
+	float: left;
+	line-height: 70px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	-moz-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	-webkit-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+footer .social a:hover {
+	background-color: #222;
+	-moz-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	-webkit-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+
+
+.aboutus {
+	background-color: #DE6461;
+	font-size: 0.8em;
+	width: 35%;
+}
+
+.swamp {
+	background-color: #435B92;
+	font-size: 0.8em;
+	width: 20%;
+}
+
+.support {
+	background-color: #4CAF52;
+	font-size: 0.8em;
+	width: 45%;
+}

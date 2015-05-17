@@ -1,0 +1,16 @@
+.team-container {
+	margin-top: 2%;
+	background-color:#C9C9C9;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+	max-width: 100px;
+	float: right;
+	margin: 10px;
+}
+
