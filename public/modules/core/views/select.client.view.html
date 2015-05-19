@@ -1,0 +1,98 @@
+<section class="content" data-ng-controller="HomeController">
+
+	<div class="projects">
+		<div class="row">
+			<div class="col col-sm-offset-1 col-sm-10 debug">
+				<div class="col col-sm-8 debug">
+					<div class="col col-sm-offset-1 col-sm-10 debug">
+						<div class="steps">
+							<p class="step-text">Select Courses</p>
+							Order by Priority
+						</div>
+						<div class="input-row">
+						<br/>
+							{{class_form.class_2.$touched}}
+						<form name="class_form" novalidate>
+							<span>
+								<input data-ng-bind="class_1" name="class_1" class="basic-slide class_1" id="class_1" type="text" placeholder="Priority 10" /><label for="class_1">Class</label>
+							</span>
+							<br/>
+							<span>
+								<input data-ng-bind="class_2" name="class_2" class="basic-slide class_2" id="class_2" type="text" placeholder="Priority 9" /><label for="class_2">Class</label>
+							</span>
+								<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_3" name="class_3" class="basic-slide class_3" id="class_3" type="text" placeholder="Priority 8" /><label for="class_3">Class</label>
+							</span>
+							<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_4" name="class_4" class="basic-slide class_4" id="class_4" type="text" placeholder="Priority 7" /><label for="class_4">Class</label>
+							</span>
+							<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_5" name="class_5" class="basic-slide class_5" id="class_5" type="text" placeholder="Priority 6" /><label for="class_5">Class</label>
+							</span>
+							<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_6" name="class_6" class="basic-slide class_6" id="class_6" type="text" placeholder="Priority 5" /><label for="class_6">Class</label>
+							</span>
+							<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_7" name="class_7" class="basic-slide class_7" id="class_7" type="text" placeholder="Priority 4" /><label for="class_7">Class</label>
+							</span>
+							<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_8" name="class_8" class="basic-slide class_8" id="class_8" type="text" placeholder="Priority 3" /><label for="class_8">Class</label>
+							</span>
+							<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_9" name="class_9" class="basic-slide class_9" id="class_9" type="text" placeholder="Priority 2" /><label for="class_9">Class</label>
+							</span>
+							<br/>
+							<span data-ng-show="class_form.class_2.$touched">
+								<input data-ng-bind="class_10" name="class_10" class="basic-slide class_10" id="class_10" type="text" placeholder="Priority 1" /><label for="class_10">Class</label>
+							</span>
+						</form>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div class="col col-sm-4 debug">
+					<div class="col col-sm-offset-1 col-sm-10 debug">
+						<div class="steps">
+							<p class="step-text">Step 2</p>
+							Select Filters & Chomp
+						</div>
+
+						<div class="btn-group" dropdown is-open="status.isopen">
+							<button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+								Button dropdown <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+						<br />
+
+
+						<div class="button-holder">
+							<div class="big-button-chomper">
+								<a href="/#!/select"><button class="btn-success">Chomp Away</button></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</section>

@@ -1,24 +1,52 @@
 <section class="content" data-ng-controller="HomeController">
-	<div class="container team-container">
-		<h1>The Idea:</h1>
-		<p>ha;lfdha f;lhflasfllf;kjjafl;kjads fjlk;fkjflk;afjldjjflaflkf;lf hfsdfjhfhj  asjhklasjh f
-		[afsdlhhj; aflh afsdjhfhja sdjhkladfshjlk  afjhklafsdhj kfadsjhk fadh jhj fdsa
-		afsdljhfdshkj afsd hjfhj fssa sf sdafasdfsadffhghfjgfghjfdgfgasjhffjgash  gh ff jhkg hjgkhg kgh fhg fhghg
-		fsdkja kgfglk fkgjk fsdjkg fsdkj lfjkf saf
-		sfadjk f kj fjhk fjhk fahj fasjhk asdfo
-		fsahafsdjhkafsdhkjfsadhjk fahjlk fh jfa</p>
-		<h1>The Team:</h1>
+	<div class="container">
+		<div class="white-text"><h1>The Idea:</h1></div>
 
-		<div class="col-sm-4" data-ng-repeat="user in users">
-			<div class="profile">
-				</br>
-				<h3>{{user.name}}</h3>
-				<br/>
-				<img class="profile-img" src="/modules/core/img/profile/{{user.avatar}}.jpg" align="top">
-				{{user.content}}
+		<br />
+		<div class="white-text">
+			<div class="col-sm-12">
+				<div class="col-sm-12 profile-content">
+					<div class="col-sm-4">
+						<p>ha;lfdha f;lhflasfllf;kjjafl;kjads fjlk;fkjflk;afjldjjflaflkf;lf hfsdfjhfhj  asjhklasjh f
+						[afsdlhhj; aflh afsdjhfhja sdjhkladfshjlk  afjhklafsdhj kfadsjhk fadh jhj fdsa
+						afsdljhfdshkj afsd hjfhj fssa sf sdafasdfsadffhghfjgfghjfdgfgasjhffjgash  gh ff jhkg hjgkhg kgh fhg fhghg
+						fsdkja kgfglk fkgjk fsdjkg fsdkj lfjkf saf
+						sfadjk f kj fjhk fjhk fahj fasjhk asdfo
+					a</p>
+					</div>
+					<div class="col-sm-4">
+						<p>ha;lfdha f;lhflasfllf;kjjafl;kjads fjlk;fkjflk;afjldjjflaflkf;lf hfsdfjhfhj  asjhklasjh f
+							[afsdlhhj; aflh afsdjhfhja sdjhkladfshjlk  afjhklafsdhj kfadsjhk fadh jhj fdsa
+							afsdljhfdshkj afsd hjfhj fssa sf sdafasdfsadffhghfjgfghjfdgfgasjhffjgash  gh ff jhkg hjgkhg kgh fhg fhghg
+							fsdkja kgfglk fkgjk fsdjkg fsdkj lfjkf saf
+							sfadjk f kj fjhk fjhk fahj fasjhk asdfo
+							a</p>
+					</div>
+					<div class="col-sm-4">
+						<p>ha;lfdha f;lhflasfllf;kjjafl;kjads fjlk;fkjflk;afjldjjflaflkf;lf hfsdfjhfhj  asjhklasjh f
+							[afsdlhhj; aflh afsdjhfhja sdjhkladfshjlk  afjhklafsdhj kfadsjhk fadh jhj fdsa
+							afsdljhfdshkj afsd hjfhj fssa sf sdafasdfsadffhghfjgfghjfdgfgasjhffjgash  gh ff jhkg hjgkhg kgh fhg fhghg
+							fsdkja kgfglk fkgjk fsdjkg fsdkj lfjkf saf
+							sfadjk f kj fjhk fjhk fahj fasjhk asdfo
+							a</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
+	<br />
+	<div class="container">
+		<div class="white-text"><h1 class="profile-header">The Team:</h1></div>
+		<div class="col-sm-4 profile-block" data-ng-repeat="user in users">
+			<div class="profile">
+				</br>
+				<h3 class="profile-name">{{user.name}}</h3>
+				<div class="profile-content">
+					<img class="profile-img" src="/modules/core/img/profile/{{user.avatar}}.jpg" align="top">
+					{{user.content}}
+				</div>
+			</div>
+		</div>
+	</div>
 	<br><br><br><br><br><br>
 </section>

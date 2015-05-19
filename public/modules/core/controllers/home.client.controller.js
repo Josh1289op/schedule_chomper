@@ -1,9 +1,31 @@
 'use strict';
 
 
-angular.module('core').controller('HomeController', ['$scope','$location',
-	function($scope, $location) {
+angular.module('core').controller('HomeController', ['$rootScope','$scope', '$http','$location', '$log',
+	function($rootScope, $scope, $http, $location, $log) {
 		$scope.$location = $location;
+
+		$scope.items = [
+			'The first choice!',
+			'And another choice for you.',
+			'but wait! A third!'
+		];
+
+		$scope.status = {
+			isopen: false
+		};
+
+		$scope.toggled = function(open) {
+			$log.log('Dropdown is now: ', open);
+		};
+
+		$scope.toggleDropdown = function($event) {
+			$event.preventDefault();
+			$event.stopPropagation();
+			$scope.status.isopen = !$scope.status.isopen;
+		};
+
+
 
 		$scope.users = [
 			{
@@ -19,7 +41,7 @@ angular.module('core').controller('HomeController', ['$scope','$location',
 			{
 				name: 'Sahir',
 				avatar: 'sahir',
-				content: 'Raw denim pour-over readymade Etsy Pitchfork. Four dollar toast pickled locavore bitters McSweeneys blog. Try-hard art party Shoreditch selfies. Odd Future butcher VHS, disrupt pop-up Thundercats chillwave vinyl jean shorts taxidermy master cleanse letterpress Wes Anderson mustache Helvetica. Schlitz bicycle rights chillwave irony lumberhungry Kickstarter next level sriracha typewriter Intelligentsia, migas kogi heirloom tousled. Disrupt 3 wolf moon lomo four loko. Pug mlkshk fanny pack literally hoodie bespoke, put a bird on it Marfa messenger bag kogi VHS.'
+				content: 'Raw denim pour-over readymade -up Thundercats chillwave vinyl jean shica. Schlitz bicycle rights chillwave irony lumberhungry Kickstarter next level sriracha typewriter Intelligentsia, migas kogi heirloom tousled. Disrupt 3 wolf moon lomo four loko. Pug mlkshk fanny pack literally hoodie bespoke, put a bird on it Marfa messenger bag kogi VHS.'
 			},
 			{
 				name: 'Danny Sepler',

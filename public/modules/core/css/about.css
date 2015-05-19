@@ -14,3 +14,23 @@
 	margin: 10px;
 }
 
+
+.profile-name {
+
+	background-color: #4CAF52;
+	padding: 10px;
+	color: white !important;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+	height:30px;
+	line-height:30px;
+}
+
+div.profile-content {
+	background-color: #C9C9C9;
+	padding: 10px;
+	color: white !important;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
