@@ -1,4 +1,4 @@
-<section class="content" data-ng-controller="HomeController">
+<section class="content" data-ng-controller="HomeController" data-ng-init="init()">
 
 	<div class="projects">
 		<div class="row">
@@ -11,48 +11,51 @@
 						</div>
 						<div class="input-row">
 						<br/>
-							{{class_form.class_2.$touched}}
+							<p class="white-text">Be sure to click the course you want to add.</p>
 						<form name="class_form" novalidate>
 							<span>
-								<input data-ng-bind="class_1" name="class_1" class="basic-slide class_1" id="class_1" type="text" placeholder="Priority 10" /><label for="class_1">Class</label>
+								<input data-ng-bind="class_1" name="class_1" class="basic-slide class_1" id="class_1" type="text" placeholder="Priority 1" ng-model="selectedCourses[0]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_1">Class 1</labelx>
 							</span>
 							<br/>
 							<span>
-								<input data-ng-bind="class_2" name="class_2" class="basic-slide class_2" id="class_2" type="text" placeholder="Priority 9" /><label for="class_2">Class</label>
-							</span>
-								<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_3" name="class_3" class="basic-slide class_3" id="class_3" type="text" placeholder="Priority 8" /><label for="class_3">Class</label>
+								<input data-ng-bind="class_2" name="class_2" class="basic-slide class_2" id="class_2" type="text" placeholder="Priority 2" ng-model="selectedCourses[1]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_2">Class 2</labelx>
 							</span>
 							<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_4" name="class_4" class="basic-slide class_4" id="class_4" type="text" placeholder="Priority 7" /><label for="class_4">Class</label>
+							<span data-ng-show="!class_form.class_2.$pristine">
+								<input data-ng-bind="class_3" name="class_3" class="basic-slide class_3" id="class_3" type="text" placeholder="Priority 3" ng-model="selectedCourses[2]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_3">Class 3</labelx>
 							</span>
 							<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_5" name="class_5" class="basic-slide class_5" id="class_5" type="text" placeholder="Priority 6" /><label for="class_5">Class</label>
+							<span data-ng-show="!class_form.class_3.$pristine">
+								<input data-ng-bind="class_4" name="class_4" class="basic-slide class_4" id="class_4" type="text" placeholder="Priority 4" ng-model="selectedCourses[3]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_4">Class 4</labelx>
 							</span>
 							<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_6" name="class_6" class="basic-slide class_6" id="class_6" type="text" placeholder="Priority 5" /><label for="class_6">Class</label>
+							<span data-ng-show="!class_form.class_4.$pristine">
+								<input data-ng-bind="class_5" name="class_5" class="basic-slide class_5" id="class_5" type="text" placeholder="Priority 5" ng-model="selectedCourses[4]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_5">Class 5</labelx>
 							</span>
 							<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_7" name="class_7" class="basic-slide class_7" id="class_7" type="text" placeholder="Priority 4" /><label for="class_7">Class</label>
+							<span data-ng-show="!class_form.class_5.$pristine">
+								<input data-ng-bind="class_6" name="class_6" class="basic-slide class_6" id="class_6" type="text" placeholder="Priority 6" ng-model="selectedCourses[5]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_6">Class 6</labelx>
 							</span>
 							<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_8" name="class_8" class="basic-slide class_8" id="class_8" type="text" placeholder="Priority 3" /><label for="class_8">Class</label>
+							<span data-ng-show="!class_form.class_6.$pristine">
+								<input data-ng-bind="class_7" name="class_7" class="basic-slide class_7" id="class_7" type="text" placeholder="Priority 7" ng-model="selectedCourses[6]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_7">Class 7</labelx>
 							</span>
 							<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_9" name="class_9" class="basic-slide class_9" id="class_9" type="text" placeholder="Priority 2" /><label for="class_9">Class</label>
+							<span data-ng-show="!class_form.class_7.$pristine">
+								<input data-ng-bind="class_8" name="class_8" class="basic-slide class_8" id="class_8" type="text" placeholder="Priority 8" ng-model="selectedCourses[7]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_8">Class 8</labelx>
 							</span>
 							<br/>
-							<span data-ng-show="class_form.class_2.$touched">
-								<input data-ng-bind="class_10" name="class_10" class="basic-slide class_10" id="class_10" type="text" placeholder="Priority 1" /><label for="class_10">Class</label>
+							<span data-ng-show="!class_form.class_8.$pristine">
+								<input data-ng-bind="class_9" name="class_9" class="basic-slide class_9" id="class_9" type="text" placeholder="Priority 9" ng-model="selectedCourses[8]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_9">Class 9</labelx>
+							</span>
+							<br/>
+							<span data-ng-show="!class_form.class_9.$pristine">
+								<input data-ng-bind="class_10" name="class_10" class="basic-slide class_10" id="class_10" type="text" placeholder="Priority 10" ng-model="selectedCourses[9]" data-limit="20" bs-options="course.title for course in getCourses($viewValue) | filter: $viewValue" bs-typeahead><labelx for="class_10">Class 10</labelx>
 							</span>
 						</form>
+
+							{{selectedCourses}}
+						<br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 						</div>
 
@@ -63,29 +66,22 @@
 					<div class="col col-sm-offset-1 col-sm-10 debug">
 						<div class="steps">
 							<p class="step-text">Step 2</p>
-							Select Filters & Chomp
-						</div>
-
-						<div class="btn-group" dropdown is-open="status.isopen">
-							<button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-								Button dropdown <span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
+							Select Filter & Chomp
 						</div>
 						<br />
+						<div class="col col-sm-offset-1 col-sm-10 debug">
+							<select class="filterSelection" ng-model="selectedFilter" ng-options="filter as filter for filter in filters">
+								<option value="">Select a Filter</option>
+							</select>
+						</div>
 
-
-						<div class="button-holder">
-							<div class="big-button-chomper">
-								<a href="/#!/select"><button class="btn-success">Chomp Away</button></a>
+							<div class="button-holder">
+								<div class="big-button-chomper">
+									<a href=""><button class="btn-success" data-ng-click="getSchedules()">Chomp Away</button></a>
+								</div>
 							</div>
 						</div>
+					<br /><br /><br /><br /><br /><br />
 
 					</div>
 				</div>

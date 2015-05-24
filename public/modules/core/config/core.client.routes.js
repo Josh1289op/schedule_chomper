@@ -20,6 +20,14 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 			url: '/contact',
 			templateUrl: 'modules/core/views/contact.client.view.html'
 		}).
+		state('test', {
+			url: '/test',
+			templateUrl: 'modules/core/views/test.html'
+		}).
+		state('schedules', {
+			url: '/schedules',
+			templateUrl: 'modules/core/views/schedules.client.view.html'
+		}).
 		state('select', {
 			url: '/select',
 			templateUrl: 'modules/core/views/select.client.view.html'

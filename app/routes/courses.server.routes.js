@@ -17,8 +17,13 @@ module.exports = function(app) {
 	app.route('/courses/sort/:courseCode')
 		.get(courses.courseCode);
 
+	app.route('/courses/exact/:courseCode/:instructor')
+		.get(courses.exactCourses);
+
 	// Finish by binding the Course middleware
 	app.param('courseId', courses.courseByID);
 
 	app.param('courseCode', courses.courseCode);
+
+	app.param('instructor',courses.exactCourses);
 };

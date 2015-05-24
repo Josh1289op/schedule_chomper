@@ -35,7 +35,8 @@
 	text-indent: 0;
 	font-weight: 300;
 }
-.basic-slide + label {
+.basic-slide + ul + labelx,
+.basic-slide + labelx {
 	display: inline-block;
 	position: absolute;
 	top: 0;
@@ -55,14 +56,22 @@
 	background: #fff;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+
 }
 .basic-slide:focus::-webkit-input-placeholder,
 .basic-slide:active::-webkit-input-placeholder {
 	color: #aaa;
 }
-.basic-slide:focus + label,
-.basic-slide:active + label {
+.basic-slide + ul + labelx,
+.basic-slide:focus + labelx,
+.basic-slide:active + labelx {
 	transform: translateX(-100%);
 }
 
 
+.filterSelection {
+	margin: 0 auto;
+	width: 100%;
+	padding: 15px 30px;
+	font-weight: 300;
+}

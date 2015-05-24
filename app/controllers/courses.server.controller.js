@@ -107,6 +107,19 @@ exports.courseCode = function(req, res, next, code) {
 	});
 };
 
+exports.exactCourses = function(req, res, next, code, instructor) {
+	Course.find().where({code: new RegExp('^' + code, 'i'), instructor: instructor}).exec(function(err, courses) {
+		if (err) {
+			return res.status(400).send({
+				message: errorHandler.getErrorMessage(err)
+			});
+		} else {
+			console.log(res);
+			res.jsonp(courses);
+		}
+	});
+};
+
 
 /**
  * Course authorization middleware

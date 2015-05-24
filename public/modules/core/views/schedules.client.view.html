@@ -1,0 +1,158 @@
+<section class="content" data-ng-controller="HomeController" data-ng-init="generateSchedules()">
+
+    {{selectedCourses}}
+
+    <br /><br /><br />
+
+    {{masterList}}
+
+    <br /><br /><br />
+
+
+    <br /><br />
+
+    <br />
+    <div class="col-sm-offset-2 col-sm-8">
+        TEST SCHEDULE: - Credits: {{testSchedule[6]}}
+        <table class="table table-striped">
+            <tr>
+                <th>Period</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>{{testSchedule[0][0].code || '--'}}</td>
+                <td>{{testSchedule[1][0].code || '--'}}</td>
+                <td>{{testSchedule[2][0].code || '--'}}</td>
+                <td>{{testSchedule[3][0].code || '--'}}</td>
+                <td>{{testSchedule[4][0].code || '--'}}</td>
+                <td>{{testSchedule[5][0].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>{{testSchedule[0][1].code || '--'}}</td>
+                <td>{{testSchedule[1][1].code || '--'}}</td>
+                <td>{{testSchedule[2][1].code || '--'}}</td>
+                <td>{{testSchedule[3][1].code || '--'}}</td>
+                <td>{{testSchedule[4][1].code || '--'}}</td>
+                <td>{{testSchedule[5][1].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>{{testSchedule[0][2].code || '--'}}</td>
+                <td>{{testSchedule[1][2].code || '--'}}</td>
+                <td>{{testSchedule[2][2].code || '--'}}</td>
+                <td>{{testSchedule[3][2].code || '--'}}</td>
+                <td>{{testSchedule[4][2].code || '--'}}</td>
+                <td>{{testSchedule[5][2].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>{{testSchedule[0][3].code || '--'}}</td>
+                <td>{{testSchedule[1][3].code || '--'}}</td>
+                <td>{{testSchedule[2][3].code || '--'}}</td>
+                <td>{{testSchedule[3][3].code || '--'}}</td>
+                <td>{{testSchedule[4][3].code || '--'}}</td>
+                <td>{{testSchedule[5][3].code || '--'}}</td>
+            </tr>
+            <tr><th>5</th>
+                <td>{{testSchedule[0][4].code || '--'}}</td>
+                <td>{{testSchedule[1][4].code || '--'}}</td>
+                <td>{{testSchedule[2][4].code || '--'}}</td>
+                <td>{{testSchedule[3][4].code || '--'}}</td>
+                <td>{{testSchedule[4][4].code || '--'}}</td>
+                <td>{{testSchedule[5][4].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>{{testSchedule[0][5].code || '--'}}</td>
+                <td>{{testSchedule[1][5].code || '--'}}</td>
+                <td>{{testSchedule[2][5].code || '--'}}</td>
+                <td>{{testSchedule[3][5].code || '--'}}</td>
+                <td>{{testSchedule[4][5].code || '--'}}</td>
+                <td>{{testSchedule[5][5].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>{{testSchedule[0][6].code || '--'}}</td>
+                <td>{{testSchedule[1][6].code || '--'}}</td>
+                <td>{{testSchedule[2][6].code || '--'}}</td>
+                <td>{{testSchedule[3][6].code || '--'}}</td>
+                <td>{{testSchedule[4][6].code || '--'}}</td>
+                <td>{{testSchedule[5][6].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td>{{testSchedule[0][7].code || '--'}}</td>
+                <td>{{testSchedule[1][7].code || '--'}}</td>
+                <td>{{testSchedule[2][7].code || '--'}}</td>
+                <td>{{testSchedule[3][7].code || '--'}}</td>
+                <td>{{testSchedule[4][7].code || '--'}}</td>
+                <td>{{testSchedule[5][7].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td>{{testSchedule[0][8].code || '--'}}</td>
+                <td>{{testSchedule[1][8].code || '--'}}</td>
+                <td>{{testSchedule[2][8].code || '--'}}</td>
+                <td>{{testSchedule[3][8].code || '--'}}</td>
+                <td>{{testSchedule[4][8].code || '--'}}</td>
+                <td>{{testSchedule[5][8].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>{{testSchedule[0][9].code || '--'}}</td>
+                <td>{{testSchedule[1][9].code || '--'}}</td>
+                <td>{{testSchedule[2][9].code || '--'}}</td>
+                <td>{{testSchedule[3][9].code || '--'}}</td>
+                <td>{{testSchedule[4][9].code || '--'}}</td>
+                <td>{{testSchedule[5][9].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>11</th>
+                <td>{{testSchedule[0][10].code || '--'}}</td>
+                <td>{{testSchedule[1][10].code || '--'}}</td>
+                <td>{{testSchedule[2][10].code || '--'}}</td>
+                <td>{{testSchedule[3][10].code || '--'}}</td>
+                <td>{{testSchedule[4][10].code || '--'}}</td>
+                <td>{{testSchedule[5][10].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>E1</th>
+                <td>{{testSchedule[0][11].code || '--'}}</td>
+                <td>{{testSchedule[1][11].code || '--'}}</td>
+                <td>{{testSchedule[2][11].code || '--'}}</td>
+                <td>{{testSchedule[3][11].code || '--'}}</td>
+                <td>{{testSchedule[4][11].code || '--'}}</td>
+                <td>{{testSchedule[5][11].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>E2</th>
+                <td>{{testSchedule[0][12].code || '--'}}</td>
+                <td>{{testSchedule[1][12].code || '--'}}</td>
+                <td>{{testSchedule[2][12].code || '--'}}</td>
+                <td>{{testSchedule[3][12].code || '--'}}</td>
+                <td>{{testSchedule[4][12].code || '--'}}</td>
+                <td>{{testSchedule[5][12].code || '--'}}</td>
+            </tr>
+            <tr>
+                <th>E3</th>
+                <td>{{testSchedule[0][13].code || '--'}}</td>
+                <td>{{testSchedule[1][13].code || '--'}}</td>
+                <td>{{testSchedule[2][13].code || '--'}}</td>
+                <td>{{testSchedule[3][13].code || '--'}}</td>
+                <td>{{testSchedule[4][13].code || '--'}}</td>
+                <td>{{testSchedule[5][13].code || '--'}}</td>
+            </tr>
+
+
+        </table>
+        <br /><br /><br /><br /><br />
+    </div>
+
+</section>
